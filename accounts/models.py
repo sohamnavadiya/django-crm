@@ -12,6 +12,7 @@ INDCHOICES = (
     ('SOFTWARE', 'SOFTWARE'),
 )
 
+
 class Account(models.Model):
     name = models.CharField("Name of Account", "Name", max_length=64)
     email = models.EmailField()
@@ -26,4 +27,3 @@ class Account(models.Model):
 
     def __str__(self):
         return self.name
-
